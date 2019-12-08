@@ -1,0 +1,794 @@
+/* body {
+  margin: 0 !important;
+  padding-top: 54px;
+  height:100%;
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+html,body{
+  margin:0 !important;
+  overflow: auto;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+}
+p{
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.ant-layout-content {
+  margin-left: 5%;
+  margin-top:5%;
+  height:auto;
+  background-color: white !important;
+  overflow-y: hidden;
+
+}
+.ant-layout{
+  background-color: white !important;
+}
+#top-navigation{
+  position: absolute;
+  width: 100%;
+  margin-left: 13%;
+  background-color:rgba(0, 0, 0, 0.05);
+  z-index: 999;
+}
+.ant-menu-item{
+  left: 3%;
+}
+
+#icon-info {
+position: relative;
+left: 58%;
+}
+/* define a fixed width for the entire menu */
+.navigation {
+  padding-top: 3%;
+  width: 14%;
+  min-height: 100%;
+  z-index: 999;
+  position: absolute;
+  background-color: white;
+  border-right:  1px solid lightgrey; 
+  border-bottom: 1px solid lightgrey;
+}
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.mainmenu a {
+  display: block;
+  background-color:white;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    background-color: white;
+}
+/* when hovering over a .mainmenu item,
+  display the submenu inside it. we're changing the submenu's max-height from 0 to 200px;
+*/
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+  margin-left: 10%;
+}
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+.submenu a {
+  background-color: white;
+}
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: white;
+}
+/* this is the initial state of all submenus. we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+#instructions-container{
+  margin-top: 3%;
+  margin-left: 10%;
+  padding-bottom: 2%;
+  width: 90%;
+}
+
+#instructions-container-user{
+  margin-left: 10%;
+  /* height: 95vh; */
+  /* overflow: auto; */
+  padding-bottom: 5%;
+  width: 90%;
+}
+
+#instructions{
+ height: 95vh; 
+ overflow: auto;
+}
+
+#list_container{
+  width: 80%;
+  height: 90vh;
+  margin-top: 3%;
+  /* overflow: auto; */
+}
+
+#single_item_container{
+  margin-left: 12%;
+  width: 50%;
+  margin-top: 3.5%;
+  height: 85vh;
+  overflow: auto;
+}
+
+.homepage-link-list{
+margin-top: 5%;
+}
+
+.homepage {
+  position: static;
+  margin: auto;
+  padding-top: 3%;
+  /* margin-bottom: 2%; */
+  /* width: 80%; */
+  max-width: 100%;
+  height: 100vh;
+  z-index: inherit;
+  overflow: auto;
+  /* max-height: 100%; */
+  /* overflow-x: auto; */
+  padding-bottom:5%;
+  text-align: center;
+}
+
+/* #homepage-container{
+  margin-bottom: 10%;
+} */
+
+.alert-notsubmitted{
+  margin-left: 10%;
+}
+
+#signed-in-user{
+  position: relative;
+  left: 40%;
+  top: -20px;
+}
+
+.homepage p{
+  padding-top: 3%;
+  text-align: justify;
+  padding-bottom: 3%;
+  margin-left: 5%;
+}
+
+#homepage-download-btn{
+  margin-left: 10%;
+  padding-bottom: 2%;
+  margin-top: 5%;
+}
+
+.user-search-container{
+  margin-left: 10%;
+  /* width: 50%; */
+}
+
+#top-users-list{
+  height: 3vh;
+  overflow-x: auto;
+}
+.single-document-display{
+  margin:'auto';
+  color:black;
+}
+.single-document-form{
+  color:black;
+  /* margin-left: 12%; */
+  /* width: 60%; */
+}
+#document {
+  position: static;
+  height: 95vh;
+  overflow: auto;
+}
+
+#document-card{
+  padding-top: 3%;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  text-align: left;
+}
+.document-description{
+ background-color: white;
+}
+
+.document-description p{
+  font-size: 18px;
+  line-height: 32px;   /* within paragraph */
+  margin-bottom: 0;
+  color: black;
+}
+
+.document-description h4{
+  /* margin-left: 5%; */
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+.document-description pre{
+  text-decoration: overline;
+  font-size: 12px;
+  color: grey
+}
+
+.document-files{
+  background-color: white;
+  /* padding-bottom: 3%; */
+  margin-left: 24%; 
+  display: block;
+}
+#attachements li{
+  padding: 1%;
+}
+
+#attachements{
+  list-style: none;
+  margin-left: -10%;
+}
+
+ul#attachements li{
+  /* display:inline; */
+}
+.file-upload{
+  margin-top: 3%;
+}
+
+#btn-submit{
+    position: absolute;
+    bottom: 440px;
+    left: 15%;
+}
+#btn-confirm{
+  position: absolute;
+  bottom: 455px;
+  left: 55%;
+}
+#btn-reject{
+  position: absolute;
+  bottom: 455px;
+  left: 70%;
+  /* position: fixed;
+  top: 10%; */
+}
+
+#btn-delete{
+  position: absolute;
+  bottom: 440px;
+  left: 50%;
+}
+
+.ant-card-head-title{
+  font-size: 24px;
+}
+
+.document-status{
+  border: solid 1 px grey;
+  padding: 10px;
+  margin: 2%;
+  border-radius: 7px;
+}
+#saved{
+  background-color: lightgray;
+  color: white;
+}
+
+
+.new-document{
+  padding-top: 3%;
+  margin-bottom: 3%;
+  width: 80%;
+  padding-bottom:3%;
+}
+.new-document h4{
+  max-width:60%;
+  margin: auto;
+}
+#new-document{
+  max-width:60%;
+  margin: auto;
+}
+.user-groups{
+  margin-top:2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: white;
+}
+
+.user-groups h5 {
+  padding-left: 9%;
+}
+
+.user-groups ul {
+  padding-left: 20%;
+}
+
+ .user-description td{
+   font-size: 18px;
+   padding-right: 5%;
+   padding-top:3%;
+ }
+
+ #user-description-table tr:nth-child(odd){
+   font-weight: bold;
+ }
+
+ #user-description-table{
+  width: 80%;
+  border: solid 1px lightgrey;
+ }
+
+
+ .add-group{
+  background-color: white;
+  padding-left:2%;
+ }
+
+.single-user{
+  margin-left: 10% !important;
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom:5%;
+  padding-bottom:3%;
+}
+
+.add-user-group-select{
+  width: 43%;
+  margin-bottom: 2%;
+}
+
+.no-gutters{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.user_document_list{
+  /* overflow-x:auto; */
+  background-color: white;
+  margin-bottom:3%;
+  width: 90%;
+  padding-bottom:3%;
+}
+.item-list{
+  background-color: white;
+  
+  margin-top: 3%;
+  margin-bottom:3%;
+  /* width: 80%; */
+  /* height: 20%; */
+  padding-bottom:3%;
+  overflow-x:auto;
+}
+
+#customFile .custom-file-control:lang(en)::after {
+  content: "Pasirinkti...";
+}
+.custom-file-input ~ .custom-file-label::after {
+  content: "Pasirinkti";
+}
+.user_form input{
+  margin: 0 0 20px 0;
+}
+#group-name{
+  font-size: 16px;
+}
+.new-form{
+  padding-top: 3%;
+  margin-top: 3%;
+  margin-bottom:3%;
+  padding-bottom:3%;
+}
+#type_form{
+  max-width:50%;
+  margin: auto;
+}
+.user_form{
+  margin-top: 2%;
+  margin-bottom: 10%;
+  padding: 10px;
+}
+.user_form h4{
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.add-group-type{
+  margin-top: 10%;
+  line-height: 2.8;
+}
+#group-type{
+  width: 360px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#back-to-list{
+  background-color: white;
+  padding: 7px;
+  font-size: 16px;
+}
+.custom-filter-dropdown {
+  padding: 8px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+}
+
+.custom-filter-dropdown input {
+  width: 130px;
+  margin-right: 8px;
+}
+
+.highlight {
+  color: #f50;
+}
+
+.table-operations {
+  margin-bottom: 16px;
+}
+
+.table-operations h3{
+ margin-top:10px;
+ text-align: center;
+}
+
+.table-operations > button {
+  margin-right: 8px;
+}
+
+#tags{
+  margin-top: 5px;
+}
+
+#notsub{
+  color:red
+}
+
+#con{
+  color: green
+}
+.user-documents-table th{
+  background-color:#f0f5ff !important;
+  border-top:solid 1px #adc6ff;
+
+}
+
+.received-documents-table th{
+  background-color: #f6ffed !important;
+  border-top: solid 1px #b7eb8f;
+}
+
+.reject-message{
+  margin-bottom: 10px;
+}
+
+.reject-message p {
+  margin: auto;
+  font-size: 12px;
+  padding: 10px;
+  border: solid red 2px;
+}
+
+.footer{
+  /* position: fixed; */
+  /* position:absolute; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+
+.login-container {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%
+}
+
+.login-container{
+  border: solid 1px  #adc6ff;;
+  padding: 5%;
+  border-radius: 5px;
+  background-color:#f0f5ff; 
+  margin: auto;
+  -webkit-box-shadow: 10px 13px 27px -2px rgba(209,204,232,1);
+-moz-box-shadow: 10px 13px 27px -2px rgba(209,204,232,1);
+box-shadow: 10px 13px 27px -2px rgba(209,204,232,1);
+}
+
+.signup-container {
+  background-color: white;
+  /* padding-top: 3%; */
+  margin-top: 3%;
+  margin-bottom:3%;
+  /* width: 80%;
+  overflow-x:auto; */
+  width: 80%;
+  height: 85vh;
+  overflow: auto;
+  /* padding-bottom:3%; */
+}
+.signup-container h4{
+  text-align: center;
+  margin-bottom: 3%;
+}
+#signup-form{
+  margin: auto;
+  width: 60%;
+  max-height: 60%;
+}
+
+.signup-form-button {
+  width: 100%;
+  margin-top: 15px;
+}
+.cards a{
+  color: white;
+}
+
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 920px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.notfound .notfound-404 {
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: 'Maven Pro', sans-serif;
+  color: #ececec;
+  font-weight: 900;
+  font-size: 276px;
+  margin: 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound h2 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 46px;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.notfound p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.notfound a {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #189cf0;
+  display: inline-block;
+  padding: 16px 38px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 400;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  background-color: #fff;
+  border-color: #189cf0;
+  color: #189cf0;
+}
+
+#accordion{
+  width: 600px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+}
+#accordion h2{
+  font-size: 12pt;
+  margin: 0px;
+  padding: 10px;
+  background: lightblue;
+  border-bottom: 1px solid #fff;
+}
+#accordion li div.content{
+  display: none;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+}
+#accordion p{
+  background-color: white;
+  margin: 0 !important; 
+}
+#accordion li:hover div.content{
+  display: inherit;
+  
+}
+
+.user-document-count-display{
+  width: 45%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+#document-count-table {
+  /* margin-left: auto; */
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  font-weight: bold;
+}
+
+#document-count-table td:nth-child(even){
+background-color: #d9d9d9;
+color: white;
+
+}
+
+.ant-calendar-picker-clear {
+  opacity: 1;
+  }
+
+#date-range-search{
+  /* position: static; */
+  display: inline;
+}
+#search-btn{
+  /* position: relative */
+}
+
+#admin-search-form{
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  background-color:rgba(0, 0, 0, 0.05);
+  padding: 3%;
+  margin-top: 3%;
+}
+#admin-search-form h5{
+  margin-bottom: 3%;
+}
+
+#statistics{
+  padding-bottom: 5%;
+}
+#statistics-search-form{
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  background-color:#f0f5ff; 
+  padding: 3%;
+  margin-top: 3%;
+  margin-left:10%; 
+  max-width: 80%;
+}
+
+#statistics-search-form h5{
+  margin-left: 2%;
+  margin-bottom: 3%;
+  margin-top: 2%;
+}
+#statistics-search-result{
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  background-color:#f0f5ff; 
+  padding: 3%;
+  margin-top: 3%;
+  margin-left:10%; 
+  max-width: 80%;
+}
+#btn-statistics{
+  position:relative;
+  left: 20px;
+}
+
+#btn-statistics button{
+  margin-left:2%;
+}
+
+#statistics-radio-group{
+  margin-left: 1px;
+  margin-top: 2%;
+}
+
+#statistics-radio-group p{
+  margin-right: 9%;
+}
+
+/* #admin-sarch-form .col-lg-6:nth-child() {
+  margin-top: 1%;
+  background-color: red;
+} */
+@media (min-width: 992px) {
+  
+}
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 h1 {
+    font-size: 162px;
+  }
+  .notfound h2 {
+    font-size: 26px;
+  }
+  /* .mainmenu, .submenu li {
+    display: inline;
+  } */
+  .mainmenu a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: red
+    
+  }
+}
+

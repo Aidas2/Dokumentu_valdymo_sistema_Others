@@ -1,0 +1,5 @@
+"ID"	"ADMIN"	"EMAIL"	"NAME"	"PASSWORD"	"SURNAME"
+"35"	"TRUE"	"virga@email.com"	"Virga"	"$2a$10$gv1cpzsJRoPTyJ6R072wwubuAPRiH5CGULGudFt.D.ue5Q18SWsWq"	"Pras"
+"37"	"TRUE"	"jaunius@email.com"	"Jaunius"	"$2a$10$JBYT3rFMtZWNQ5iENRnYFu5vMYQxla5udYWUaXXGyat22ji9yilcu"	"jaunius"
+"232"	"TRUE"	"adminas@email.com"	"Abra"	"123456"	"Kadabra"
+"385"	"FALSE"	"majoras@email.com"	"jonas "	"$2a$10$BpTb3jgd0iNBDp5eTQv2H.jHBK6CWufsPyUJ7stgb5W99wcRjaeVC"	"majoras"

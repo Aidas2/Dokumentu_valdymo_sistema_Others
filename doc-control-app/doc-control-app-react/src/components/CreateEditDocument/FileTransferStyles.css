@@ -1,0 +1,17 @@
+.progress-bar-container {
+    position: relative;
+    height: 50px;
+    width: 240px;
+    border-radius: 50px;
+    /* border: 1px solid black; */
+    
+}
+
+.progress-bar {
+    position: relative;
+    height: 40%;
+    width: 100%;
+    border-radius: 50px;
+    /* border: 1px solid black; */
+    
+}

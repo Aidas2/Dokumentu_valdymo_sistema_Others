@@ -1,0 +1,115 @@
+ .btn {
+    width: 12em;
+
+}
+.blue {
+    color:rgb(109, 134, 184);
+}
+
+.red {
+    color:  rgb(237,123,92);
+}
+
+.green {
+    color:  rgb(127, 167, 54);
+}
+
+.submitButton {
+    background-color:rgb(109, 134, 184);
+}
+
+.submitButton:hover {
+    background-color:rgb(73, 91, 126);
+}
+
+.submitButton:active {
+    background-color:rgb(57, 71, 99);
+}
+
+.submitButtonAlt {
+    background-color: rgb(127, 167, 54)
+}
+
+.submitButtonAlt:hover {
+    background-color:rgb(94, 126, 34);
+}
+.submitButtonAlt:active {
+    background-color: rgb(90, 121, 34);
+}
+
+.deleteButton {
+    background-color: rgb(231, 90, 80);
+}
+.deleteButton:hover {
+    background-color: rgb(197, 72, 63);
+}
+.deleteButton:active {
+    background-color: rgb(156, 55, 48);
+}
+.goBackButton {
+    background-color: rgb(70, 70, 70);
+}
+
+.goBackButton:hover {
+    background-color: rgb(47, 47, 47);
+}
+.goBackButton:active {
+    background-color: rgb(22, 22, 22);
+}
+
+/* NavLink selection */
+.selected {
+    background-color: rgb(245, 245, 245);
+}
+
+.flag-lt img{
+    width: 60px;
+    height: auto;
+}
+
+
+.customFileSpan {
+    color:white;
+}
+
+.filepond--panel-root {
+    background-color: rgb(109, 134, 184);
+}
+.filepond--drop-label {
+	color: white;
+}
+.filepond--root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol';
+    font-size: 1.1em;
+        
+}
+.dropdown-item{
+     font-size: 12px;
+}
+
+.fileDownloadButton{
+    transform: rotate(180deg);
+}
+
+.fileDownloadComponent{
+    /* padding: 8px; */
+    /* width: 33px; */
+    height:50px;
+}
+
+/* .filepond--file-action-button:focus {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) !important;
+  }
+  .filepond--file-action-button:hover {
+    box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.9) !important;
+  } */
+
+
+  /* 
+  Navigation header
+  */
+  .navbar.background{
+      background-color: #b898b4;
+  }

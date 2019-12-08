@@ -1,0 +1,248 @@
+/*MAIN COMPONENT*/
+main {
+    margin-left: 64px;
+    margin-top: 50px;
+    /*background-color: rgba(218, 218, 213, 0.2);*/
+    font-family: "Helvetica Neue";
+}
+
+body {
+    background-color: rgba(218, 218, 213, 0.2);
+}
+
+main.open {
+    margin-left: 240px;
+}
+
+#main-content {
+    padding: 10px;
+}
+
+
+.mainelement {
+    font-family: "Helvetica Neue";
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.page-header {
+    color: #003366;
+}
+
+.myhr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    background-color: #003366;
+}
+
+.borderMain {
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: lightgrey;
+}
+
+
+/*NAVBAR*/
+
+.navbar {
+    /*background-color: #10C8CD !important;*/
+    color: white;
+    font-family: "Helvetica Neue";
+    background-color: #6699CC !important;
+    /*background-color: #83AE84 !important;*/
+    /*color: black;*/
+
+
+}
+
+/*.navform {*/
+/*background-color: #54A4DE !important;*/
+/*}*/
+
+#mainnavbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 64px;
+    z-index: 10;
+}
+
+#mainnavbar.open {
+    left: 240px;
+}
+#appbarText{
+    color: white;
+    border: 2px solid white;
+    /*background-color: #10C8CD;*/
+    background-color: #6699CC;
+    border-radius: 5px 5px 5px 5px;
+    font-family: "Helvetica Neue";
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*BUTTONS*/
+
+.buttonLogin{
+  width: 70%;
+}
+
+.buttonXL {
+    font-size: 16px;
+    width: 400%;
+}
+
+.buttonXL1 {
+    font-size: 16px;
+    width: 280%;
+    margin-left: 30px;
+}
+
+.button1 {
+    /*background-color: #10C8CD;*/
+    background-color: #6699CC;
+    color: white;
+    border: 2px solid #003366;
+}
+
+.button1:hover {
+    /*background-color: #10C8CD;*/
+    background-color: #6699CC;
+    color: black;
+}
+
+.buttonTransparent {
+    /*border: solid;*/
+    /*border-color: #003366;*/
+    /*background-color: white;*/
+
+    /*background-color: #10C8CD;*/
+    /*background-color: #6699CC;*/
+    color: #003366;
+    border: 2px solid #003366;
+}
+.buttonTransparent:hover {
+    /*border: solid;*/
+    /*border-color: #003366;*/
+    /*background-color: white;*/
+
+    background-color: #6699CC;
+    color: white;
+    border: 2px solid #003366;
+}
+
+.buttonReject{
+    border: 2px solid darkred;
+}
+
+.buttonReject:hover{
+    color: #003366;
+}
+
+/*.mybutton {*/
+/*background-color: #f38b2e;*/
+/*border-color: #f38b2e;*/
+/*color: white;*/
+/*}*/
+
+/*SIDENAV*/
+
+#mysidenav {
+    background: #003366 !important;
+    /*background: #5F021F !important;*/
+    position: fixed;
+    color: white;
+
+}
+
+/*PAGINATION*/
+.pagination {
+    display: contents;
+    /* neveikia */
+    /* position: fixed!important;
+    bottom: 0 !important; 
+    left: 0 !important; */
+}
+
+.pagination ul {
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.pagination li {
+    display: inline-block;
+    border: 1px solid rgb(224, 224, 224);
+    color: #000;
+    cursor: pointer;
+    margin-right: 3px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.pagination li a {
+    padding: 2px 5px;
+    display: inline-block;
+    color: #000;
+    outline: none;
+}
+
+.pagination li.active {
+    background: rgb(224, 224, 224);
+    outline: none;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*SHADOW*/
+.myshadow {
+    width: 700px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+}
+
+/*ICONS*/
+i {
+    color: white;
+}
+
+.settingstd i {
+    color: black;
+}
+
+
+td.lastColumn, th.lastColumn {
+    text-align: right;
+}
+
+/*body {*/
+/*background-color: rgba(218, 218, 213, 0.2);*/
+/*}*/
+
+.tableUA {
+    background-color: white;
+    font-family: "Helvetica Neue";
+    border-style: solid;
+    border-color: lightgrey;
+    border-radius: 10px;
+}
+
+.modal-backdrop {
+    opacity:0.5 !important;
+}
+
+#iconsettings{
+    color: black;
+}

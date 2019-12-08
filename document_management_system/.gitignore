@@ -1,0 +1,67 @@
+# misc
+.env
+.vscode/
+
+# Mac
+.DS_Store
+
+# Compiled class files
+*.class
+
+# Log files
+logs/
+*.log
+*.log*
+
+# Package Files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+################################################################################
+# NPM
+################################################################################
+/react_app/package-lock.json
+# ignore react builds in src folder
+spring_boot_app/src/main/resources/public/
+# dependencies
+/react_app/node_modules
+# testing
+/react_app/coverage
+# production
+/react_app/build
+
+################################################################################
+# Maven
+################################################################################
+log/
+uploads
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+!/.mvn/wrapper/maven-wrapper.jar
+
+################################################################################
+# IDE specific:
+################################################################################
+# Eclipse
+.classpath
+.project
+.settings/
+# Intellij
+.idea/
+*.iml
+*.ipr
+*.iws
+**/.idea
+
